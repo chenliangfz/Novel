@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
 
 def SupportVersion = "24.2.1"
 
@@ -31,4 +32,8 @@ dependencies {
     compile "com.android.support:appcompat-v7:$SupportVersion"
     compile "com.android.support:design:$SupportVersion"
     testCompile 'junit:junit:4.12'
+
+    //Butterknife
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
 }
