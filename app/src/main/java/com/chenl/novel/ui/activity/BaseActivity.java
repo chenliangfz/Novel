@@ -6,7 +6,6 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 
 import com.chenl.novel.R;
 
@@ -42,7 +41,7 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     private void initToolbar() {
         if (mToolbar != null) {
-            mToolbar.setTitle(getTitle());
+            mToolbar.setTitle(getDefaultTitle());
             setSupportActionBar(mToolbar);
             ActionBar actionBar = getSupportActionBar();
             if (actionBar != null){
@@ -50,6 +49,9 @@ public abstract class BaseActivity extends AppCompatActivity {
             }
         }
     }
+
+    @NonNull
+    protected abstract CharSequence getDefaultTitle();
 
     /**
      * 初始化Persenter
@@ -67,6 +69,8 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     @NonNull
     protected abstract int getLayoutResId();
+
+
 }
 
 

@@ -16,10 +16,16 @@ public class MainActivity extends BaseActivity implements MainView {
     }
 
     @Override
+    protected CharSequence getDefaultTitle() {
+        return getString(R.string.app_name);
+    }
+
+    @Override
     protected void initPersenter() {
         mPresenter = new MainPresenter();
         mPresenter.attachView(this);
     }
+
 
     @Override
     protected void onDestroy() {
