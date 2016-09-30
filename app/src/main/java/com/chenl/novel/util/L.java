@@ -13,7 +13,6 @@ public class L {
 
     static {
         Logger.init(BuildConfig.APPLICATION_ID);
-        L.e(BuildConfig.APPLICATION_ID);
     }
 
     public static void d(String message, Object... args) {
