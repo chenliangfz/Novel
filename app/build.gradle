@@ -36,4 +36,19 @@ dependencies {
     //Butterknife
     compile 'com.jakewharton:butterknife:8.4.0'
     apt 'com.jakewharton:butterknife-compiler:8.4.0'
+
+    //Dagger2
+    compile 'com.google.dagger:dagger:2.0.1'//必须配置，引用dagger框架，运行时必备
+    apt 'com.google.dagger:dagger-compiler:2.0.1' //使用apt build dagger-compiler编译器
+    provided 'javax.annotation:jsr250-api:1.0' //必须配置，dagger缺少 javax.annotation包
+
+    //Retrofit2
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+
+    //OkHttp
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+
+
+    //logger
+    compile 'com.orhanobut:logger:1.15'
 }
