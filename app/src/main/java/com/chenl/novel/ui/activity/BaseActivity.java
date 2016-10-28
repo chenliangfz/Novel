@@ -32,7 +32,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         initTheme();
         mButterKnifeBinder = ButterKnife.bind(this);
         initToolbar();
-        initPersenter();
+        initPresenter();
         initView();
     }
 
@@ -56,7 +56,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     /**
      * 初始化Persenter
      **/
-    protected abstract void initPersenter();
+    protected abstract void initPresenter();
 
 
     protected abstract void initView();

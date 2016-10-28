@@ -1,5 +1,9 @@
 package com.chenl.novel.core.component;
 
+import com.chenl.novel.core.App;
+import com.chenl.novel.core.module.FileModule;
+import com.chenl.novel.ui.fragment.FileFragment;
+
 import dagger.Component;
 
 /**
@@ -8,5 +12,4 @@ import dagger.Component;
 
 @Component
 public interface AppComponent {
-
 }

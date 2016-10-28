@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'android-apt'
 
+
 def SupportVersion = "24.2.1"
 
 android {
@@ -44,6 +45,9 @@ dependencies {
 
     //Retrofit2
     compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile "com.squareup.retrofit2:converter-gson:2.1.0"
+    compile "com.squareup.retrofit2:adapter-rxjava:2.1.0"
+    compile 'io.reactivex:rxandroid:1.2.1'
 
     //OkHttp
     compile 'com.squareup.okhttp3:okhttp:3.4.1'
